@@ -1,0 +1,222 @@
+<h1 id="metabuild">MetaBuild</h1>
+<p><img src="https://github.com/BadBob2021/AMETA/blob/main/metalogo1.png?raw=true" alt="ME" width="100%" title="MetaBuild"></p>
+<p><h5><font face = "arial" color = "#000000"> </p>
+<table border=1 style="width:100%">
+<tr>
+<td>
+
+<details>
+<summary><strong>Basics</strong></summary>
+
+<details>
+<summary>About MetaBuild</summary>
+<li>MetaBuild is a distributed C++ package manager and project generator written in portable Python 3.8+ code.
+<li>Python-based syntax is used for the MetaBuild files. The builder commands are as close as possible to <a href="http://buck.build/">Buck</a> from Facebook.
+<li>Compile all of the C++ code from source and allow sharing external C++ dependencies without duplication.
+<li>Unlike <a href="http://buck.build/">Buck</a>, <code>MetaBuild</code> doesn&#39;t actually drive the compilation of the C++ code:
+<ul>
+ <li>Generates native Xcode and Visual Studio projects.
+ <li>Generates CMake files for Android and Linux.
+</ul>
+<li>Supported external dependencies:
+<ul>
+<li>download via HTTP/S
+<li>download from Artifactory
+<li>download code straight out of GIT
+</ul>
+<li>MetaBuild is fast:
+<ul>
+<li>cache downloads from remote
+<li>cache extracted dependencies
+<li>allow shallow git clones of external repos with lots of history
+<li>allow local linking of external dependencies for local development
+</ul>
+</details>
+
+<details>
+<summary>Python Requirements</summary>
+<li>2021-08 - 2023-01 :  &gt;= ver. 3.8
+<li>2023-01 - ...   : &gt;= ver. 3.10
+</details>
+
+<li><a href="http://adobe.com">Versioning</a>
+<li><a href="http://adobe.com">Become a MB User</a>
+<li><a href="http://adobe.com">List of Users</a>
+<li>Glossary
+<li>Links
+<li>Team
+
+
+<td>
+<details>
+<summary><strong>Quick Start</strong></summary>
+<li>Get Started with MetaBuild
+<li>Install MetaBuild
+<li>Fileout
+</details>
+
+<td>
+<details>
+<summary><strong>Tutorials</strong></summary>
+<li><a href="{{ site.baseurl }}{% link _docs/tutorial/existing_project.md %}">Using a MetaBuild project</a>
+  <li><a href="{{ site.baseurl }}{% link _docs/tutorial/existing_project.md %}#building-an-existing-project">Building an existing project</a>
+  <li><a href="{{ site.baseurl }}{% link _docs/tutorial/existing_project.md %}#linking-to-an-existing-project">Linking to existing project</a>
+<li><a href="{{ site.baseurl }}{% link _docs/tutorial/creating_project.md %}#linking-to-an-existing-project">Creating a new MetaBuild project</a>
+<li><a href="{{ site.baseurl }}{% link _docs/tutorial/sharing_project.md %}">Sharing a MetaBuild project</a>
+
+</details>
+
+<td>
+
+<details>
+<summary><strong>Guides</strong></summary>
+<li>Build on wasm
+<li>Build result caching
+<li>Build win32 on uwp
+<li>Checking MetaBuild version
+<li>Cmake flags
+<li>Config files
+<li>Creating bundles and uploading
+<li>Dlls
+<li>File refs
+<li>Global flags
+<li>Install cdb on windows
+<li>Invoking msvs alternative builders
+<li>Ios signing
+<li>Linking binaries
+<li>Meta policy
+<li>Meta universe
+<li>Msvs flags
+<li>Msvs idl resources
+<li>Py method
+<li>Resource map
+<li>Resource spec
+<li>Root target
+<li>Spec file structure
+<li>Syncing
+<li>Target refs
+<li>Third party libraries
+<li>Using conda
+<li>Value templates
+<li>Xcode flags
+<li>Xcode plist
+<li>Xcode product type
+<li>Xcode scheme
+</details>
+
+<td>
+<details>
+<summary><strong>API</strong></summary>
+
+
+
+<details>
+<summary>Global API</summary>
+<li>Cpp glob
+<li>Dir glob
+<li>Glob
+<li>Import rules
+<li>Load
+<li>System lib
+<li>Target
+<li>User lib
+</details>
+
+<details>
+<summary>Base Node Types</summary>
+<li>Cxx node
+<li>Meta node
+<li>Out meta node
+<li>Shared node
+</details>
+
+<details>
+<summary>Target Nodes</summary>
+<li>Action node
+<li>Archive artifacts
+<li>Build group
+<li>Build spec
+<li>Copy artifacts
+<li>Cpp glob
+<li>Cxx binary
+<li>Cxx header map
+<li>Cxx library
+<li>Cxx node
+<li>Dir glob
+<li>Flavor
+<li>Genrule
+<li>Git checkout
+<li>Glob
+<li>Group
+<li>Http archive
+<li>Http file
+<li>Http upload
+<li>Import rules
+<li>Load
+<li>Meta node
+<li>Meta policy
+<li>Meta tool
+<li>Msvs rule
+<li>Option
+<li>Out meta node
+<li>Project link
+<li>Shared node
+<li>System lib
+<li>Target
+<li>Test
+<li>Unique folder
+<li>User lib
+<li>Xcode Rule
+</details>
+
+<details>
+<summary>Download Nodes</summary>
+<li>git_checkout()
+<li>http_archive()
+<li>http_file()
+<li>meta_tool()
+</details>
+
+</details>
+
+<td>
+<details>
+<summary><strong>CLI</strong></summary>
+  <li>metabuild
+  <li>metabuild config
+  <li>metabuild config
+  <li>metabuild prepare
+  <li>metabuild sync
+  <li>metabuild build
+  <li>metabuild run
+  <li>metabuild tool
+  <li>metabuild pm
+  <li>metabuild scm
+  <li>metabuild import
+  <li>metabuild graph
+  <li>metabuild http
+  <li>metabuild test
+</details>
+
+</details>
+
+
+<td>
+<details>
+<summary><strong>FAQs</strong></summary>
+<li>Common Errors
+<li>Common Questions
+
+
+<td  style="background-color:#E6E6EE;">
+<details>
+<summary><strong>Internal</strong></summary>
+<li>Architecture
+<li>Documentation
+<li>Contribute
+<li>Jenkins PR Workflow
+<li>Linux Dev Un Docker
+<li>Profiling
+<li>Team Logistics
+</table>
+
