@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MetaBuild	</h1>
+<hr>
+
+<h3>Distributed C++ Package Manager</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Get Started</button>
+  <button class="btn" onclick="filterSelection('cars')"> Reference</button>
+  <button class="btn" onclick="filterSelection('people')"> More</button>
+
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="https://github.com/BadBob2021/AMETA/blob/main/mountains.jpg?raw=true" alt="Mountains" style="width:100%">
+
+      <h4>
+      <details>
+ 	  <summary>Basics</summary>
+	  <h5>
+
+      <details>
+	  <summary>About MetaBuild</summary>
+	  <ul>
+	  <li>MetaBuild is a distributed C++ package manager and project generator written in portable Python 3.8+ code.</li>
+	  <li>Python-based syntax is used for the MetaBuild files. The builder commands are as close as possible to [Buck](http://buck.build/) from Facebook.</li>
+	  <li>Compile all of the C++ code from source and allow sharing external C++ dependencies without duplication.</li>
+	  <li>Unlike [Buck](http://buck.build/), `MetaBuild` doesn't actually drive the compilation of the C++ code:</li>
+	  <ul>
+	   <li>Generates native Xcode and Visual Studio projects.</li>
+	   <li>Generates CMake files for Android and Linux.</li>
+	  </ul>
+	  <li>Supported external dependencies:</li>
+	  <ul>
+	  <li>download via HTTP/S</li>
+	  <li>download from Artifactory</li>
+	  <li>download code straight out of GIT</li>
+	  </ul>
+	  <li>MetaBuild is fast:</li>
+	  <ul>
+	  <li>cache downloads from remote</li>
+	  <li>cache extracted dependencies</li>
+	  <li>allow shallow git clones of external repos with lots of history</li>
+	  <li>allow local linking of external dependencies for local development</li>
+	  </ul>
+	  </ul>
+	  </details>
+
+	  <details>
+	  <summary>Python Requirements</summary>
+	  <ul>
+	  <li>2021-08 - 2023-01 :  &gt;= ver. 3.8</li>
+	  <li>2023-01 - ...   : &gt;= ver. 3.10</li>
+	  </ul>
+	  </details>
+
+	  <li>Versioning</li>
+	  <li>Become a MB User</li>
+	  <li>List of Users</li>
+	  <li>Glossary</li>
+	  <li>Links</li>
+<li>Team</li>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/lights.jpg?raw=true" alt="Lights" style="width:100%">
+    <h4>
+      <details>
+	  <summary>Quick Start</summary>
+	  <h5>
+	  <li>Get Started with MetaBuild</li>
+	  <li>Install MetaBuild</li>
+	  <li>Fileout</li>
+	  </details>
+
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/nature.jpg?raw=true" alt="Nature" style="width:100%">
+      <h4>
+      <details>
+	  <summary>Tutorials</summary>
+	  <h5>
+
+	  <li>Using a MetaBuild project</li>
+	  <li>Building an existing project</li>
+	  <li>Linking to existing project</li>
+	  <li>Creating a new MetaBuild project</li>
+	  <li>Sharing a MetaBuild project</li>
+
+</details>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="https://github.com/BadBob2021/AMETA/blob/main/cars1.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+      <details>
+	  <summary>Guides</summary>
+	  <h5>
+	  <li>Build on wasm</li>
+	  <li>Build result caching</li>
+	  <li>Build win32 on uwp</li>
+	  <li>Checking MetaBuild version</li>
+	  <li>Cmake flags</li>
+	  <li>Config files</li>
+	  <li>Creating bundles and uploading</li>
+	  <li>Dlls</li>
+	  <li>File refs</li>
+	  <li>Global flags</li>
+	  <li>Install cdb on windows</li>
+	  <li>Invoking msvs alternative builders</li>
+	  <li>Ios signing</li>
+	  <li>Linking binaries</li>
+	  <li>Meta policy</li>
+	  <li>Meta universe</li>
+	  <li>Msvs flags</li>
+	  <li>Msvs idl resources</li>
+	  <li>Py method</li>
+	  <li>Resource map</li>
+	  <li>Resource spec</li>
+	  <li>Root target</li>
+	  <li>Spec file structure</li>
+	  <li>Syncing</li>
+	  <li>Target refs</li>
+	  <li>Third party libraries</li>
+	  <li>Using conda</li>
+	  <li>Value templates</li>
+	  <li>Xcode flags</li>
+	  <li>Xcode plist</li>
+	  <li>Xcode product type</li>
+	  <li>Xcode scheme</li>
+</details>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/cars2.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+      <details>
+	  <summary>API</summary>
+
+	  <details>
+
+	  <summary>Global API</summary>
+	  <h5>
+	  <li>Cpp glob</li>
+	  <li>Dir glob</li>
+	  <li>Glob</li>
+	  <li>Import rules</li>
+	  <li>Load</li>
+	  <li>System lib</li>
+	  <li>Target</li>
+	  <li>User lib</li>
+	  </details>
+
+	  <details>
+	  <summary>Base Node Types</summary>
+	  <h5>
+	  <li>Cxx node </li>
+	  <li>Meta node </li>
+	  <li>Out meta node </li>
+	  <li>Shared node </li>
+	  </details>
+
+	  <details>
+	  <summary>Target Nodes</summary>
+	  <h5>
+	  <li>Action node </li>
+	  <li>Archive artifacts </li>
+	  <li>Build group </li>
+	  <li>Build spec </li>
+	  <li>Copy artifacts </li>
+	  <li>Cpp glob </li>
+	  <li>Cxx binary </li>
+	  <li>Cxx header map </li>
+	  <li>Cxx library </li>
+	  <li>Cxx node </li>
+	  <li>Dir glob </li>
+	  <li>Flavor </li>
+	  <li>Genrule </li>
+	  <li>Git checkout </li>
+	  <li>Glob </li>
+	  <li>Group </li>
+	  <li>Http archive </li>
+	  <li>Http file </li>
+	  <li>Http upload </li>
+	  <li>Import rules </li>
+	  <li>Load </li>
+	  <li>Meta node </li>
+	  <li>Meta policy </li>
+	  <li>Meta tool </li>
+	  <li>Msvs rule </li>
+	  <li>Option </li>
+	  <li>Out meta node </li>
+	  <li>Project link </li>
+	  <li>Shared node </li>
+	  <li>System lib </li>
+	  <li>Target </li>
+	  <li>Test </li>
+	  <li>Unique folder </li>
+	  <li>User lib </li>
+	  <li>Xcode Rule</li>
+	  </details>
+
+	  <details>
+	  <summary>Download Nodes</summary>
+	  <h5>
+	  <li>git_checkout() </li>
+	  <li>http_archive()</li>
+	  <li>http_file()</li>
+	  <li>meta_tool()</li>
+	  </details>
+
+</details>
+
+
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/cars3.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+
+      <details>
+	  <summary>CLI</summary>
+	  <h5>
+	    <li>metabuild</li>
+	    <li>metabuild config</li>
+	    <li>metabuild prepare</li>
+	    <li>metabuild sync</li>
+	    <li>metabuild build</li>
+	    <li>metabuild run</li>
+	    <li>metabuild tool</li>
+	    <li>metabuild pm</li>
+	    <li>metabuild scm</li>
+	    <li>metabuild import</li>
+	    <li>metabuild graph</li>
+	    <li>metabuild http</li>
+	    <li>metabuild test</li>
+	  </details>
+
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="https://github.com/BadBob2021/AMETA/blob/main/people1.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+
+      <details>
+	  <summary>FAQs</summary>
+	  <h5>
+	  <li>Common Errors</li>
+	  <li>Common Questions</li>
+</details>
+
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/people2.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+      <details>
+	  <summary>Internal</summary>
+	  <h5>
+	  <li>Architecture</li>
+	  <li>Documentation</li>
+	  <li>Contribute</li>
+	  <li>Jenkins PR Workflow</li>
+	  <li>Linux Dev Un Docker</li>
+	  <li>Profiling</li>
+<li>Team Logistics</li>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://github.com/BadBob2021/AMETA/blob/main/people3.jpg?raw=true" alt="Car" style="width:100%">
+      <h4>
+      <details>
+	  <summary>Changelogs</summary>
+	  <h5>
+	  <li>0.2</li>
+	  <li>0.1</li>
+	  </details>
+
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
