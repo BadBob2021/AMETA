@@ -1,0 +1,42 @@
+ Volume in drive D has no label.
+ Volume Serial Number is 0B8B-16F9
+
+ Directory of D:\ADB\META\meta-build.git.corp.adobe.com-main\_docs\api
+
+05/11/2022  05:33 PM             1,344 action_node.md
+05/11/2022  05:33 PM               704 archive_artifacts.md
+05/11/2022  05:33 PM             1,549 build_group.md
+05/11/2022  05:33 PM             1,725 build_spec.md
+05/11/2022  05:33 PM             3,306 copy_artifacts.md
+05/11/2022  05:33 PM             1,171 cpp_glob.md
+05/11/2022  05:33 PM               493 cxx_binary.md
+05/11/2022  05:33 PM             1,785 cxx_header_map.md
+05/11/2022  05:33 PM             7,126 cxx_library.md
+05/11/2022  05:33 PM             7,738 cxx_node.md
+05/11/2022  05:33 PM             1,056 dir_glob.md
+05/11/2022  05:33 PM             2,590 flavor.md
+05/11/2022  05:33 PM            11,263 genrule.md
+05/11/2022  05:33 PM             2,674 git_checkout.md
+05/11/2022  05:33 PM             4,878 glob.md
+05/11/2022  05:33 PM             1,770 group.md
+05/11/2022  05:33 PM               877 http_archive.md
+05/11/2022  05:33 PM               767 http_file.md
+05/11/2022  05:33 PM             2,067 http_upload.md
+05/11/2022  05:33 PM             2,270 import_rules.md
+05/11/2022  05:33 PM             1,119 load.md
+05/11/2022  05:33 PM             3,046 meta_node.md
+05/11/2022  05:33 PM             8,021 meta_policy.md
+05/11/2022  05:33 PM             1,380 meta_tool.md
+05/11/2022  05:33 PM             2,704 msvs_rule.md
+05/11/2022  05:33 PM             3,685 option.md
+05/11/2022  05:33 PM             1,443 out_meta_node.md
+05/11/2022  05:33 PM             7,309 project_link.md
+05/11/2022  05:33 PM             2,230 shared_node.md
+05/11/2022  05:33 PM             2,153 system_lib.md
+05/11/2022  05:33 PM             7,904 target.md
+05/11/2022  05:33 PM             9,688 test.md
+05/11/2022  05:33 PM             1,200 unique_folder.md
+05/11/2022  05:33 PM             1,650 user_lib.md
+05/11/2022  05:33 PM             3,481 xcode_rule.md
+              35 File(s)        114,166 bytes
+               0 Dir(s)  49,565,937,664 bytes free
